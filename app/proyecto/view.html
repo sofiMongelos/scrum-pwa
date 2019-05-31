@@ -1,0 +1,37 @@
+<div class="col-12">
+    <div class="row" style="margin-left: 2px">
+        <div align="left" class="col-md-11  m-t-20" style="margin-top: -13px; margin-bottom: -10px;">
+            <i class="mdi mdi-folder-plus" aria-hidden="true" style="font-size: 41px; cursor: pointer"
+                ng-click="agregar()" data-toggle="tooltip" title="Añadir nuevo"></i>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table color-bordered-table success-bordered-table" ng-table="tableParams">
+                    <thead>
+                        <tr>
+                            <th style="text-align: center">Proyecto</th>
+                            <!--<th style="text-align: center"></th>-->
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td ng-cloak style="text-align: center">Proyecto 1</td>
+                            <!--<td ng-cloak style="text-align: center"></td>-->
+                            <td>
+                                <button type="button" class="btn waves-effect waves-light btn-xs btn-info" ng-click="verMAs()">Ver Más</button>
+                            </td>
+                            <td>
+                                <i class="mdi mdi-close-box" style="font-size: 22px; color: #2E74B5; cursor: pointer"
+                                    ng-click="eliminar()" data-toggle="tooltip" title="Eliminar"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,85 @@
+<!--<div class="preloader">
+    <svg class="circular" viewBox="25 25 50 50">
+    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+</div>-->
+<div id="main-wrapper">
+    <header class="topbar" style="position: fixed; width: 100%">
+        <nav class="navbar top-navbar navbar-expand-md navbar-light">
+            <div class="navbar-collapse">
+                <ul class="navbar-nav mr-auto mt-md-0">
+                </ul>
+                <ul class="navbar-nav my-lg-0">
+                    <li class="nav-item">
+                        <i class="fa fa-user-o" style="color: white; margin-right: 10px"></i>
+                    </li>
+                    <li class="nav-item">
+                        <h5 style="color: white;margin-top:  5px;margin-right: 24px;" ng-cloak>
+                            <strong ng-cloak>Administrador</strong>
+                        </h5>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-expanded="false" ui-sref="login">
+                            <h5 style="color: white;margin-top:  5px;margin-right: 24px;" ng-cloak><i
+                                    class="mdi mdi-exit-to-app" style="color: white"></i>
+                                Salir
+                            </h5>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside class="left-sidebar">
+        <div class="scroll-sidebar">
+            <nav class="sidebar-nav">
+                <ul id="sidebarnav">
+                    <li ui-sref-active="active">
+                        <a class="has-arrow" ui-sref="app.inicio" aria-expanded="false">
+                            <i class="mdi mdi-home"></i>
+                        </a>
+                    </li>
+                    <!--<li ui-sref-active="active">
+                        <a class="has-arrow" ui-sref="app.administracion" aria-expanded="false" >
+                            <i class="mdi mdi-settings"></i>
+                            <span class="hide-menu">Administrador</span>
+                        </a>
+                    </li>-->
+                    <li ui-sref-active="active">
+                        <a class="has-arrow" ui-sref="app.usuario" aria-expanded="false">
+                            <i class="mdi mdi-account-circle"></i>
+                            <span class="hide-menu">Usuario</span>
+                        </a>
+                    </li>
+                    <li ui-sref-active="active">
+                        <a class="has-arrow" ui-sref="app.proyecto" aria-expanded="false">
+                            <i class="mdi mdi-folder-outline"></i>
+                            <span class="hide-menu">Proyecto</span>
+                        </a>
+                    </li>
+                    <li ui-sref-active="active">
+                        <a class="has-arrow" ui-sref="app.product-backlog" aria-expanded="false">
+                            <i class="mdi mdi-history"></i>
+                            <span class="hide-menu">Product Backlog</span>
+                        </a>
+                    </li>
+                    <li ui-sref-active="active">
+                        <a class="has-arrow" ui-sref="app.sprint-backlog" aria-expanded="false">
+                            <i class="mdi mdi-history"></i>
+                            <span class="hide-menu">Sprint Backlog</span>
+                        </a>
+                    </li>
+                    <!--<li ui-sref-active="active">
+                        <a class="has-arrow" ui-sref="app-proyecto" aria-expanded="false">
+                            <i class="mdi mdi-folder-outline"></i>
+                            <span class="hide-menu">Proyecto</span>
+                        </a>
+                    </li>-->
+                </ul>
+            </nav>
+    </aside>
+</div>
+<div class="page-wrapper">
+    <div class="container-fluid" ui-view></div>
+    <footer class="footer"> | Asunción - Paraguay |</footer>
+</div>
+</div>

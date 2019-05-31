@@ -1,0 +1,43 @@
+<div class="col-12">
+    <div class="row" style="margin-left: 2px">
+        <div align="left" class="col-md-11  m-t-20" style="margin-top: -2px">
+            <i class="fa fa-plus" style="font-size: 30px; cursor: pointer" ng-click="agregar()" data-toggle="tooltip"
+                title="Añadir nuevo"></i>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Historia de Usuarios</h4>
+            <div class="table-responsive">
+                <table class="table color-bordered-table success-bordered-table" ng-table="tableParams">
+                    <thead>
+                        <tr>
+                            <th style="text-align: center">Nombre Corto</th>
+                            <th style="text-align: center">Nombre Largo</th>
+                            <th style="text-align: center">Estado</th>
+                            <!--<th style="text-align: center">Proyecto</th>-->
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td ng-cloak style="text-align: center">IS</td>
+                            <td ng-cloak style="text-align: center">Ingenieria de Software</td>
+                            <td ng-cloak style="text-align: center">Estado1</td>
+                            <!--<td ng-cloak style="text-align: center">Is2</td>-->
+                            <td>
+                                <i class="mdi mdi-pencil-box" style="font-size: 22px; color: #2E74B5; cursor: pointer"
+                                    ng-click="modificar()" data-toggle="tooltip" title="Editar"></i>
+                            </td>
+                            <td>
+                                <i class="mdi mdi-close-box" style="font-size: 22px; color: #2E74B5; cursor: pointer"
+                                    ng-click="eliminar()" data-toggle="tooltip" title="Eliminar"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

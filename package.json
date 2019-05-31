@@ -1,0 +1,22 @@
+{
+  "name": "public_html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.10",
+    "angular-i18n": "^1.6.10",
+    "angular-material": "6.2.1",
+    "angular-ui-router": "^0.4.3",
+    "block-ui": "^2.70.1",
+    "ng-table": "^3.0.1",
+    "ngbootbox": "^0.2.0",
+    "ngstorage": "^0.3.11",
+    "toastr": "^2.1.4"
+  }
+}

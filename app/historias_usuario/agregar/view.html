@@ -1,0 +1,112 @@
+<div class="col-lg-8 col-md-7" style="margin-left: auto; margin-right: auto; float:none;">
+    <br>
+    <div class="header">
+        <h4 class="title">Agregar Historias de Usuarios</h4>
+    </div>
+    <div class="card">
+        <hr>
+        <div class="content" style="padding: 0px 15px 10px 15px;">
+           
+            <form name="form" ng-submit="confirmar(form)">
+                <div class="form-group row">
+                    <label class="col-lg-4 form-control-label">Nombre Corto</label>
+                    <div class="col-lg-8">
+                        <input ng-model="" type="email" id="" name="nombre" class="form-control"
+                            placeholder="Nombre Corto" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-lg-4 form-control-label">Nombre Largo</label>
+                    <div class="col-lg-8">
+                        <input ng-model="" type="email" id="" name="nombre" class="form-control"
+                            placeholder="Nombre Largo" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-lg-4 control-label">Estado:</label>
+
+                    <div class="col-lg-8" ng-class="{'has-error':formAgregar.codigoDepartamento.$invalid}">
+
+                        <select ui-select2 class="form-control input-sm" ng-model="" name="" required>
+                            <option value="">-- Seleccionar --</option>
+                            <option ng-repeat="" value="{{}}">
+                                {{}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-lg-4 control-label">Prioridad:</label>
+
+                    <div class="col-lg-8" ng-class="{'has-error':formAgregar.codigoDepartamento.$invalid}">
+
+                        <select ui-select2 class="form-control input-sm" ng-model="" name="" required>
+                            <option value="">-- Seleccionar --</option>
+                            <option ng-repeat="" value="{{}}">
+                                {{}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-lg-4 control-label">Sprint:</label>
+
+                    <div class="col-lg-8" ng-class="{'has-error':formAgregar.codigoDepartamento.$invalid}">
+
+                        <select ui-select2 class="form-control input-sm" ng-model="" name="" required>
+                            <option value="">-- Seleccionar --</option>
+                            <option ng-repeat="" value="{{}}">
+                                {{}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <!--<div class="form-group row">
+                    <label class="col-lg-4 control-label">Proyecto:</label>
+
+                    <div class="col-lg-8" ng-class="{'has-error':formAgregar.codigoDepartamento.$invalid}">
+
+                        <select ui-select2 class="form-control input-sm" ng-model="" name="" required>
+                            <option value="">-- Seleccionar --</option>
+                            <option ng-repeat="l in listaDepartamentos" value="{{}}">
+                                {{}}
+                            </option>
+                        </select>
+                    </div>
+                </div>-->
+                <hr>
+                <div class="form-actions">
+                    <div class="row">
+                        <div class="col-md-offset-3 col-lg-12">
+                            <button type="submit" class="btn btn-success">Confirmar</button>
+                            <button type="button" class="btn btn-inverse" ng-click="limpiar()">Limpiar</button>
+                            <button type="button" class="btn btn-default waves-effect"
+                                ng-click="cancelar()">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="clearfix"></div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL -->
+
+<!--<div class="modal fade" id="cambioUsuario" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content" id="cambioUsuario">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Confirmaci&oacute;n</h4>
+            </div>
+            <div class="modal-body">
+                <p>¿Est&aacute; seguro que desea realizar el cambio?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" ng-click="">Aceptar</button>
+            </div>
+        </div>
+    </div>
+</div>-->

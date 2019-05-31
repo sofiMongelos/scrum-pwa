@@ -1,0 +1,27 @@
+<div class="col-12">
+    <div class="card">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table color-bordered-table success-bordered-table" ng-table="tableParams">
+                    <thead>
+                        <tr>
+                            <th style="text-align: center">Monto a pagar (Gs.)</th>
+                            <th style="text-align: center">Vencimiento</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td ng-cloak style="text-align: center">{{33333333 |currency :'': 0}}</td>
+                            <td ng-cloak style="text-align: center">{{20041993|date:'dd/MM/yyyy'}}</td>
+                            <td>
+                                <button  type="button" class="btn waves-effect waves-light btn-xs btn-info"
+                                    ng-click="">Pagar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

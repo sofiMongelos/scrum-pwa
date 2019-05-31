@@ -1,0 +1,32 @@
+<section id="wrapper">
+    <div class="login-register">
+        
+        <div class="login-box card card-inverse card-info text-center" style="background: rgba(41,134,245,.85); border-color:transparent">
+            
+            <div class="card-body">
+                <form class="form-horizontal" id="loginform" name="form" ng-submit="login(form)">
+                    <div class="form-group" style="margin-bottom: 3%;">
+                        <div class="col-xs-12">
+                            <input class="form-control" type="text" placeholder="Usuario" ng-model="datos.documento"
+                                style="font-size: 13px;padding-left: 10px;width: 70%;background-color: white;border-radius: 4px;"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-bottom: 3%;">
+                        <div class="col-xs-12">
+                            <input class="form-control" type="password" placeholder="Contraseña" ng-model="datos.pass"
+                                style="font-size: 13px;padding-left: 10px;width: 70%;background-color: white;border-radius: 4px;"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-group text-center m-t-20">
+                        <div class="col-xs-12">
+                            <button class="btn btn-default btn-lg btn-block text-uppercase waves-effect waves-light"
+                                type="submit" style="font-size: 13px;width: 40%;height: 10%;">INGRESAR</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
